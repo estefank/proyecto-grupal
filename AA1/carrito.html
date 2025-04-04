@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>carrito de producto</title>
+</head>
+<section class="header">
+    <img class="logotipo" src="../AA1/imagenes/logo.png" alt="logo">
+</section>    
+    
+<style>
+      body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh; 
+      margin: 0;
+      background-color: #f4f4f4;
+      }
+    header{
+        width: 100%;
+      padding: 40px;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      font-size:xx-large;
+    }
+
+   .logotipo{
+    height: 180px;
+    width: 250px;
+    margin: -40px;
+   }
+    header img{
+        height:90px; 
+      width: auto; 
+      position:absolute; 
+      left: 20px;
+      bottom: 15px;
+    }
+    text header{
+        height: 50px;
+    }
+    .from-container{
+        text-align:center ;
+    }
+    form{
+        width: 300px;
+      padding: 20px;
+      border: 2px solid #333;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      background-color: white;
+      text-align: center;
+      margin-bottom: 50px; 
+    }
+   .map-container{
+    text-align: center;
+    font-size: x-large;
+    border: 2px solid #333;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+   }
+   footer{
+    width: 100%;
+      padding: 40px;
+      background-color: #222;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      position: relative;
+      font-size: larger;
+   }
+   nav a{
+            font-family: 'Arial Narrow';
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+            
+   }
+   nav{
+    background-color: #686868;
+    width: 100%;
+    padding: 10px;
+   text-align: center;
+   }
+   a{
+    color: #f4f4f4;
+   }
+   a:hover {
+    color:blue;
+   }
+
+
+
+</style>
+<body>
+    <nav>    
+         <a href="AA1.html">Inicio</a>
+         <a href="#">Mujer</a>
+         <a href="#">Hombres</a>
+         <a href="#">Niños</a>
+         <a href="#">Deportes</a>
+         <a href="#">Contacto</a>
+    </nav>
+     
+    
+     <header>
+        <div class="form-container">
+            <img src="footshop_white_letters.png"
+            <h1>COMPLETE SU ULTIMO PASO PARA SU COMPRA</h1>
+       </div>
+    </header>
+        <form action="#" method="post">
+            <h2>CARRITO DE COMPRAS</h2>
+    <form action="#" method="post">
+        <label for="recibidor">nombre del recibidor</label>
+        <input type="text" id="recibidor" name="recibidor" required><br><br>
+        
+        <label for="celular">Celular:</label>
+        <input type="number" id="celular" name="celular" required><br><br>
+        
+        <label for="tipo-documento">Tipo de documento:</label>
+        <select id="tipo-documento" name="tipo-documento">
+            <option value="dni">DNI</option>
+            <option value="pasaporte">Pasaporte</option>
+            <option value="otro">Otro</option>
+        </select><br><br>
+        <!--formulario-->
+        <label for="documento">Ingreso documento:</label>
+        <input type="number" id="documento" name="documento" required><br><br>
+        
+        <input type="radio" id="envio" name="entrega" value="domicilio" required>
+        <label for="envio">Envío a domicilio</label><br>
+       
+        <input type="radio" id="retiro" name="entrega" value="tienda" required>
+        <label for="retiro">Retiro en tienda</label><br><br>
+        
+        <p><h2>ELIJE METODO DE PAGO</h2></p>
+        <input type="radio" id="pago" name="pago" value="targeta" required>
+        <label for="envio">pago con targeta</label><br>
+       
+        <input type="radio" id="pago" name="pago" value="efectivo" required>
+        <label for="retiro">pago en efectivo</label><br><br>
+        
+        <a href="listo.html">
+        <button type="button">comprar</button><br><br>
+        </a>
+
+    </form>
+        
+        <div class="map-container">
+            <div class="map-title">Nuestro Local</div>
+            <!-- Mapa de Google Maps -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2047.101295623005!2d-76.96957365587826!3d-12.05766496385748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c666c92e3e77%3A0xb680b42a1c459c66!2sMall%20Aventura%20Santa%20Anita!5e0!3m2!1ses!2spe!4v1743474885372!5m2!1ses!2spe" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    
+    
+    
+    <footer>
+        <div class="footer-content">
+            <ul>
+              <a>&copyfootshop 2025</a>
+              <a href="https://consumidor.gob.pe/libro-de-reclamaciones/">libro de reclamaciones</a>
+              <a href="mailto:contacto@instituto.com">contacto directo</a>
+            </ul>
+          </div>
+          
+
+    </footer>
+            
+            
+    
+</body>
+</html>

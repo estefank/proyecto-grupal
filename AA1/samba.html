@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: #f4f4f4;
+    }
+     img{
+            width: 200px;
+            height: 100px;
+            border-radius: 0px;
+        }
+        .zoom{
+            transition: transform 0.3s ease-in-out;
+        }
+        .zoom:hover{
+            transform: scale(1.5); /*Aumente el tamaño un 50%*/
+        }
+        .zoom section{
+            width: 50%;
+            height: 50%;
+        }
+        .catalogo{
+            text-align: center;
+        }
+        .catalogo img{
+            width: 500px;
+            height: 400px;
+            text-align: right;
+        }
+        .nike{
+            margin-bottom: 15px;
+            text-align:center;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .nike-label{
+            display: block;
+            margin-bottom: 5px;
+        }
+        .nike input, .nike select, .nike textarea{
+            width: 15%;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+
+        }
+        .nike button{
+            background-color: rgb(93, 185, 7);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 20%;
+
+        }
+        .precio{
+            color: red;
+        }
+        .nike button:hover{
+            background-color: rgb(73, 138, 12);
+        }
+        .navegador{
+            background-color:rgb(68, 68, 68);
+            text-align: center;
+         }
+         nav a {
+            font-family: 'Arial Narrow';
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+         }
+         .header{
+            background-color: #f4f4f4;
+           text-align: center;
+            height: 100px;
+            width: 150px; 
+          
+         }
+         .logotipo{
+            position: center;
+            height: 100px;
+            width: 150px; 
+         }
+  
+         footer{
+            background-color:rgb(68, 68, 68);
+            color: white;
+            text-align: center;
+      
+         }
+</style>
+
+<section class="header">
+
+    <img class="logotipo" src="../AA1/imagenes/logo.png" alt="logo">
+</section>    
+<body>
+    <section class="navegador">
+        <nav>    
+       <strong> 
+        <a href="AA1.html">Inicio</a>
+        <a href="#">Mujer</a>
+        <a href="#">Hombres</a>
+        <a href="#">Niños</a>
+        <a href="#">Deportes</a>
+        <a href="#">Contacto</a>
+    </strong>
+    </nav>
+</section>
+
+<br>
+    <section class = "catalogo"> 
+        <div class="catalogo">
+            <img src="../AA1/imagenes/adidassamba1.jpg" class="zoom" width="300">
+            <img src="../AA1/imagenes/adidassamba2.jpg" class="zoom" width="300">
+            <div class="catalogo">
+            <img src="../AA1/imagenes/adidassamba3.jpg" class="zoom" width="300">
+            <img src="../AA1/imagenes/adidassamba4.jpg" class="zoom" width="300">
+        
+        <form action="#" method="post">
+            <!--categoria del producto (combo box)-->
+            <div class="nike">
+                <!--nombre del producto-->
+                <label form="categoria">Talla del producto</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="seleccione">US H 15 / M 16</option>
+                    <option value="seleccione">US H 16 / M 16.5</option>
+                    <option value="seleccione">US H 17 / M 18</option>
+                    <option value="seleccione">US H 18 / M 19</option>
+                    <option value="seleccione">US H 19 / M 20</option>
+                </select>
+            </div>
+            <!--precios-->
+            <div class="nike">
+                <label form="precio">Cantidad</label>
+                <input type="number" id="precio" name="precio" min="0" required>
+            </div>
+            <!--disponibilidad-->
+          
+       
+        
+    
+            <!--fecha de registro-->
+            <div class="nike">
+                <label form="fecha-registro">Fechas de entrega</label>
+                <input type="date" id="fecha-registro" name="fecha-registro" required>
+            </div>
+            <!--boton de envio-->
+            <div class="nike">
+                <a href="carrito.html">
+                    <button type="button">registrar producto</button>   
+                </a>
+                
+            </div>
+        </div>
+        </form>
+  
+        <footer>
+   
+            <p>&copy; 2025 FOOTSHOP | <strong>Todos los Derechos Reservados</strong> </p>
+        </footer>
+</body>
+</html>

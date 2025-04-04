@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AA1</title>
+    <style>
+        body{
+            font-family: Arial,sans-serif;
+            background-color: #f4f4f4;
+            margin:0;
+            padding:0;
+         }            
+        header{
+            background-color: #f4f4f4;
+            align-content: center;   
+            height: 230px;
+            width: 150px; 
+            margin: 20px;
+            padding: 20px;
+         }
+       
+        
+        h1{
+            margin: 0;  
+         }
+       
+        nav a {
+            font-family: 'Arial Narrow';
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 25px;
+         }
+
+        .modelos-item{
+            background-color: rgb(68, 68, 68);
+            padding: 20px;
+            margin: 0 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0,0.5);
+            width: 250px;
+         }
+
+        img{
+            position: center;
+            width: 100%;
+            border-radius: 8px;
+        }
+         .modelos-item h3{
+            margin: 10px 0;
+            color: white;
+         }
+         .modelos-item h5{
+            color: white;
+         }
+         .modelos-item p{
+            color: #fafafa;
+         }
+         footer{
+            background-color:rgb(68, 68, 68);
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+         }
+         section{
+            display: flex;
+            justify-content: space-around;
+            margin: 40px 0;
+            flex-wrap: wrap;
+         }
+         .navegador{
+            background-color:rgb(68, 68, 68);
+            text-align: center;
+         }
+         .banner-container{
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        background-color: #f4f4f4;
+    }
+    .banner-imagenes{
+        width: 600px;
+        height: 314px;
+        display: flex;
+        animation: scrollBanner 5s linear infinite;
+    }
+    /*ANIMACON DE DESPLAZAMIENTO DE FORMA HORIZONTAL*/
+    @keyframes scrollBanner { 
+        0%{
+            transform: translateX(0);
+        }
+
+        100%{
+            transform: translateX(100%);
+        }
+    }
+   
+    .form-group label{
+        font-family: Arial, Helvetica, sans-serif;
+        color: black;
+        text-align: left;
+        padding: 20px;
+    }
+    menu{
+        display: flex;
+    }
+    .video{
+        text-align: center;
+        margin: 40px;
+   }
+   .video iframe{
+    width: 80%;
+    height: 500px;
+    border: none;
+    border-radius: 8px;
+   }
+   .masvendidos-container h1{
+    text-align: center;
+    font-family: 'Arial Narrow';
+   }
+   .deportes-container{
+    text-align: center;
+            display:inline-flex;
+            padding: 50px;
+            margin:  45px;
+            width: 440px;
+            
+   }
+   .Running h3{
+        margin: 30px;
+   }
+   .Running a{
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    color: black;
+   }
+   .registrate{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: yellow;
+    padding: 40px;
+    height: 20px;
+    margin: o;
+   }
+   .registrate a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+   }
+   .logotipo{
+    height: 180px;
+    width: 250px;
+    margin: -40px;
+   }
+   
+    </style>
+</head>
+<section class="header">
+    <img class="logotipo" src="../AA1/imagenes/logo.png" alt="logo">
+</section>    
+    
+<body>
+    <section class="navegador">
+        <nav>    
+       <strong> 
+        <a href="AA1.html">Inicio</a>
+        <a href="#">Mujer</a>
+        <a href="#">Hombres</a>
+        <a href="#">Niños</a>
+        <a href="#">Deportes</a>
+        <a href="#">Contacto</a>
+    </strong>
+    </nav>
+</section>
+<div class="banner-container">
+    <div class="banner-imagenes">
+    <img src="../AA1/imagenes/imagencarrusel1.jpg"  alt="banner1">
+    <img src="../AA1/imagenes/imagencarrusel2.jpg"   alt="banner2">
+    <img src="../AA1/imagenes/imagenbanner1.jpg"   alt="banner3">    
+</div>
+</div>  
+<br>
+<hr>
+<section class="video">
+
+   <iframe src="https://www.youtube.com/embed/aVs2Y_mNMTc?si=m8SmRnmSN4sjKAbD" title="YouTube video player"  title="Las mejores Hamburguesas"></iframe>
+</section>
+
+<hr>
+<br>
+
+    <div class="masvendidos-container">
+    <strong><h1>LOS MÁS VENDIDOS</h1></strong>
+    </div>
+<section class="menu">
+    <div class="modelos-item">
+       <a href="samba.html"><img src="../AA1/imagenes/adidas1.jpg" alt="adidas1"></a>
+    <h3>Adidas Samba</h3>
+    <h5>Tallas Disponibles</h5>
+    <p>Hombre</p>
+    <p><strong>Precio S/. 400.00</strong></p>
+    </div>
+   
+
+    <div class="modelos-item">
+       
+        <img src="../AA1/imagenes/adidas2.jpg" alt="adidas2">
+        <br><br>
+    <h3>Adidas Originals</h3>
+    <h5>Tallas Disponibles</h5>
+    <p>Hombre | Mujer</p>
+    <p><strong>Precio S/. 250.00</strong></p>
+    </div>
+
+
+    <div class="modelos-item">
+        <img src="../AA1/imagenes/adidas3.jpg" alt="adidas3">
+    <h3>Adidas RunFalcon</h3>
+    <h5>Tallas Agotadas</h5>
+    <p>Hombre</p>
+    <p><strong>Precio S/. 450.00</strong></p>
+    </div>
+
+</section>
+<section class="menu">
+    <div class="modelos-item">
+        <img src="../AA1/imagenes/nike1.jpg" alt="nike1">
+    <h3>Nike AirForce 1</h3>
+    <h5>Tallas Disponibles</h5>
+    <p>Mujer</p>
+    <p><strong>Precio S/. 400.00</strong></p>
+    </div>
+
+    <div class="modelos-item">
+        <img src="../AA1/imagenes/nike2.jpg" alt="nike2">
+        <br>
+        <br>
+        <br>   
+    <h3>Nike SB 2</h3>
+    <h5>Tallas Disponibles</h5>
+    <p>Hombre | Mujer</p>
+    <p><strong>Precio S/. 450.00</strong></p>
+    </div>
+
+    <div class="modelos-item">
+        <img src="../AA1/imagenes/nike3.jpg" alt="nike3">
+    <h3>Nike AirForce 2</h3>
+    <h5>Tallas Disponibles</h5>
+    <p>Mujer</p>
+    <p><strong>Precio S/. 450.00</strong></p>
+    </div>
+
+</section>
+
+    <section class="deportes-container">
+        
+        <div class="Running">
+        <h3>RUNNING</h3>
+        <a href="#">Zapatillas Running</a>
+        <hr>
+        <a href="#">Zapatillas Running Mujer</a>
+        <hr>
+        <a href="#">Zapatillas Running Hombre</a>
+        </div>
+
+    </section>
+    <section class="deportes-container">
+        
+        <div class="Running">
+        <h3>Fútbol</h3>
+        <a href="#">Zapatillas Fútbol Mujer</a>
+        <hr>
+        <a href="#">Zapatillas Fútbol Hombre</a>
+        <hr>
+        <a href="#">Zapatillas Fútbol Niño</a>
+        </div>
+
+    </section>
+
+    <section class="deportes-container">
+        
+        <div class="Running">
+        <h3>GYM Y ENTRENAMINTO</h3>
+        <a href="#">Zapatillas para Gym</a>
+        <hr>
+        <a href="#">Zapatillas Training Mujer</a>
+        <hr>
+        <a href="#">Zapatillas Training Hombre</a>
+        </div>
+
+    </section>
+
+
+    <section class="registrate">
+        <h1>REGISTRATE Y RECIBE 20% DE DSCTO EN TU PRIMERA COMPRA</h1>
+        <strong>
+        <a href="Registrate.html">REGISTRATE</a>
+    </strong>
+    </section>
+<footer>
+   
+    <p>&copy; 2025 FOOTSHOP | <strong>Todos los Derechos Reservados</strong> </p>
+</footer>
+
+</body>
+</html>
